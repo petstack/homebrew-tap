@@ -14,28 +14,28 @@
 class Roxy < Formula
   desc "High-performance MCP proxy server bridging MCP clients to FastCGI/HTTP backends"
   homepage "https://github.com/petstack/roxy"
-  version "0.2.0"
-  license "AGPL-3.0-only"
+  version "0.3.0"
+  license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/petstack/roxy/releases/download/v#{version}/roxy-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "c66a576fbb0ba21064de242a4e850a65753c31f1bac43af569e752af994bd8f3"
+      sha256 "844ff713df61e604df68db70eb764b09ef183e2ded6190aff24a5efdb4ca036d"
     end
     on_intel do
       url "https://github.com/petstack/roxy/releases/download/v#{version}/roxy-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "31b52396ece85fa46b9ea62ad9af8f4fa9f06eefcb5e477964bbe24e217f1a87"
+      sha256 "ed59cbe5f27f4340db19044e5f68c75d3837d5c1a9a3c1909c665e2787581844"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/petstack/roxy/releases/download/v#{version}/roxy-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "8990e9b76d68e9dea4187bd1cdcd50169fefae1d813ef31a99f7704407feab8c"
+      sha256 "67b144456b173b90e71b2a136fbe707fedcc4e5572d7603badd7e9b9026866db"
     end
     on_arm do
       url "https://github.com/petstack/roxy/releases/download/v#{version}/roxy-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "fed30eafc04481182c5e91967c0dec1ccd2a259fecb3fe0740dec988b05c85cc"
+      sha256 "998556454cdd9ca626e8a8664682a28be922e6ebd4b7651c801939f0a5a5ecfc"
     end
   end
 
